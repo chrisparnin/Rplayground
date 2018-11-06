@@ -1,0 +1,11 @@
+name: Rplayground
+vm:
+   ip: 10.50.50.50
+   memory: 2048
+lang:
+  - python2
+  - R:
+      packages: coin
+commands:
+  R: Rscript examples.R
+  py: python examples.py
