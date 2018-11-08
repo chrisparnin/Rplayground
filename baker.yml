@@ -5,7 +5,15 @@ vm:
 lang:
   - python2
   - R:
-      packages: coin
+      packages: 
+        - coin 
+        - ggplot2
+packages:
+  apt:
+    - python-tk
 commands:
+  # for some reason apt doesn't install python-tk; this is workaround
+  # excute this first before running py
+  tkinter: sudo apt-get install python-tk 
   R: Rscript examples.R
   py: python examples.py
