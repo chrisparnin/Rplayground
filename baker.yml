@@ -12,8 +12,7 @@ packages:
   apt:
     - python-tk
 commands:
-  # for some reason apt doesn't install python-tk; this is workaround
-  # excute this first before running py
-  tkinter: sudo apt-get install python-tk 
+  # in case apt-get doesn't install python-tk, this is workaround
+  tkinter: sudo apt-get install python-tk
   R: Rscript examples.R
   py: python examples.py

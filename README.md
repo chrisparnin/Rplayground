@@ -39,6 +39,5 @@ Running py in Rplayground 🍞
 
 #### Python instruction
 
-Please execute `baker run tkinter` before `baker run py`. We're currently
-investigating why baker isn't able to install the python-tk package which
-the package seaborn depends on.
+The seaborn package depends on another package, python-tk. In case apt-get
+can't install it, execute `baker run tkinter` before `baker run py`.
